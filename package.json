@@ -1,0 +1,22 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc --outDir ./build && node ./build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " npx tsc --outDir ./build && esbuild ./build/index.js --bundle --outfile=./build/main.js"
+  },
+  "author": "anna",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mithril": "^2.2.11",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/mithril": "^2.2.7",
+    "esbuild": "^0.24.0"
+  }
+}
